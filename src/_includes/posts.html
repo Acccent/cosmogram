@@ -4,6 +4,7 @@ layout: default
 
 <div class="pb-5 mb-5 border-b border-gray-100">
   <h1 class="font-bold text-5xl">{{title}}</h1>
+  <span>About {{ content | readingTime }} read</span>
   <p class="text-center text-base leading-6 font-medium text-gray-500">
     <time> {{ date | readableDate }}
       by

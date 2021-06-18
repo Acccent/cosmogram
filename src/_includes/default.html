@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
+    {% metagen
+      title=title,
+      desc=decription,
+      url="https://cosmogr.am"+page.url,
+      img="",
+      img_alt="",
+      twitter_card_type="summary_large_image",
+      twitter_handle="acccent",
+      name="robin"
+    %}
     {% block head %}{% endblock %}
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <!-- Needed only if you are using Netlify Identity feature -->
+      <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+
+    <script defer src="static/js/core.js"></script>
   </head>
-  <body>
+  <body id="{{ bodyid }}">
 
     <div class="container">
       {{ content | safe }}
 
       {% include "./partials/footer.html" %}
     </div>
-
-    <script src="/static/js/alpine.js"></script>
-
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
 
   </body>
 </html>

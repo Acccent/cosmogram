@@ -54,13 +54,13 @@
   /* responsive typography */
   --hiq-unitless-min-font-size: 12;
   --hiq-unitless-max-font-size: 20;
-  --hiq-unitless-lower-font-range: 460;
-  --hiq-unitless-upper-font-range: 900;
+  --hiq-unitless-lower-font-range: 500;
+  --hiq-unitless-upper-font-range: 1200;
 
   /* type scale */
   --hiq-font-size-1: 3rem;
-  --hiq-font-size-2: 2.4rem;
-  --hiq-font-size-3: 1.8rem;
+  --hiq-font-size-2: 1.8rem;
+  --hiq-font-size-3: 1.4rem;
   --hiq-font-size-4: 1.2rem;
   --hiq-font-size-5: 1rem;
   --hiq-font-size-6: 0.8rem;

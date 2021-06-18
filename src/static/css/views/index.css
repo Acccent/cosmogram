@@ -1,0 +1,9 @@
+#index {
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    margin: 25vh 0;
+  }
+
+}

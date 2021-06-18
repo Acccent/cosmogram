@@ -1,13 +1,16 @@
 ---
 layout: default
 title: Cosmogram
-description: Robin's blog
+description: posts by robin
+bodyid: index
 path: home
 ---
 
-<h1>{{title}}!</h1>
+<header id="hero">
+  <h1>{{title}}</h1>
+</header>
 
-<section>
+<main id="postslist">
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
@@ -29,6 +32,7 @@ path: home
 
                 </time>
             </p>
+            <span>{{ post | readingTime }}</span>
             {% if post.data.description %}
                 <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
@@ -43,4 +47,4 @@ path: home
 
         </article>
     {% endfor %}
-</section>
+</main>

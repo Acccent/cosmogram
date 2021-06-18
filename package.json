@@ -3,18 +3,26 @@
     "clean": "rimraf _site",
     "serve": "npm-run-all clean -p serve:*",
     "serve:eleventy": "eleventy --serve",
-    "serve:css": "postcss src/static/init.css -o _site/static/css/style.css -w",
+    "serve:css": "postcss src/static/css/init.css -o _site/static/css/style.css -w",
     "build": "cross-env NODE_ENV=production run-s clean build:*",
     "build:eleventy": "eleventy",
-    "build:css": "postcss src/static/init.css -o _site/static/css/style.css",
+    "build:css": "postcss src/static/css/init.css -o _site/static/css/style.css",
     "debug": "set DEBUG=* & eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
     "autoprefixer": "^10.2.6",
     "colorguard": "^1.2.1",
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.11",
+    "eleventy-load": "^0.2.0",
+    "eleventy-load-html": "^0.1.0",
+    "eleventy-load-js": "^0.1.0",
+    "eleventy-plugin-metagen": "^1.3.1",
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "eleventy-plugin-responsive-images": "^0.0.5",
+    "eleventy-plugin-youtube-embed": "^1.6.3",
     "html-minifier": "^4.0.0",
     "luxon": "^1.27.0",
     "npm-run-all": "^4.1.5",
@@ -30,7 +38,6 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "alpinejs": "^2.8.2",
     "hiq": "^4.1.9"
   }
 }

@@ -1,6 +1,17 @@
-@import 'hiq/css/hiq.css';
 @import 'fontface';
+
+@import 'hiq/css/utility/*.css';
+@import 'hiq/css/base/*.css';
+@import 'hiq/css/components/*.css';
+@import 'hiq/css/elements/*.css';
+@import 'hiq/css/typography/*.css';
+
 @import 'variables';
+
+@import 'views/*.css';
+
+@custom-media --hiq-lower-font-range (min-width: 500px);
+@custom-media --hiq-upper-font-range (min-width: 1200px);
 
 :--heading {
   font-family: var(--font-family-heading);

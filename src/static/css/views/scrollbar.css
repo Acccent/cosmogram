@@ -1,0 +1,43 @@
+body.os-theme-light {
+  --scrollbar-color: color-mod(var(--color-secondary) tint(80%));
+
+  & > .os-scrollbar.os-scrollbar-vertical {
+    width: 25px;
+    padding: 0 2px;
+    pointer-events: auto;
+
+    & > .os-scrollbar-track {
+      transform: scaleX(0.2);
+      transform-origin: right;
+      transition: transform 0.2s ease-in-out;
+
+      & > .os-scrollbar-handle {
+        border-radius: 0;
+        background: content-box var(--scrollbar-color);
+        box-sizing: border-box;
+        opacity: 0.5;
+        transition: opacity 0.3s linear;
+      }
+    }
+
+    &.os-scrollbar-auto-hidden {
+      opacity: 1;
+      visibility: visible;
+
+      & > .os-scrollbar-track > .os-scrollbar-handle {
+        opacity: 0.15;
+      }
+    }
+  }
+
+  &.os-dragging > .os-scrollbar.os-scrollbar-vertical, & > .os-scrollbar.os-scrollbar-vertical:hover {
+    & > .os-scrollbar-track {
+      transform: scaleX(1);
+
+      & > .os-scrollbar-handle {
+        opacity: 0.85;
+        transition: opacity 0.1s ease-in;
+      }
+    }
+  }
+}
