@@ -1,0 +1,46 @@
+@each $w, $weight in (Light, Medium, Bold, Heavy), (300, 400, 700, 900) {
+  @each $s, $style in ( , It), (normal, italic) {
+    @font-face {
+      font-family: 'Latina';
+      font-style: $(style);
+      font-weight: $(weight);
+      font-display: swap;
+      src: url("/static/fonts/Latina/LatinaEssential-$(w)$(s).woff2") format('woff2'),
+           url("/static/fonts/Latina/LatinaEssential-$(w)$(s).woff") format('woff');
+    }
+  }
+}
+
+@each $w, $weight in (Light, Regular, Medium, SemiBold, Bold, ExtraBold), (300, 400, 500, 600, 700, 800) {
+  @font-face {
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: $(weight);
+    font-display: swap;
+    src: url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff2") format('woff2'),
+         url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff") format('woff');
+  }
+}
+
+@each $w, $weight in (Blanca, Gris, Negra), (300, 400, 700) {
+  @each $s, $style in ( , Italica), (normal, italic) {
+    @font-face {
+      font-family: 'Reforma';
+      font-style: $(style);
+      font-weight: $(weight);
+      font-display: swap;
+      src: url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff2") format('woff2'),
+           url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff") format('woff');
+    }
+  }
+}
+
+@each $w, $weight in (Light, Regular, Medium, SemiBold, Bold, ExtraBold), (300, 400, 500, 600, 700, 800) {
+  @font-face {
+    font-family: 'JuliaMono';
+    font-style: normal;
+    font-weight: $(weight);
+    font-display: swap;
+    src: url("/static/fonts/JuliaMono/JuliaMono-$(w).woff2") format('woff2');
+  }
+}

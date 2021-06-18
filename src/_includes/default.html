@@ -12,16 +12,14 @@
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    {% if prism == true %}
-      <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
-    {% endif %}
   </head>
   <body>
-    {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+    <div class="container">
+      {{ content | safe }}
 
-    {% include "./partials/footer.html" %}
+      {% include "./partials/footer.html" %}
+    </div>
 
     <script src="/static/js/alpine.js"></script>
 

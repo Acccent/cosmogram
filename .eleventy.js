@@ -1,6 +1,4 @@
-const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
@@ -17,27 +15,17 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
-
-  // To Support .yaml Extension in _data
-  // You may remove this if you can use JSON
-  eleventyConfig.addDataExtension("yaml", (contents) =>
-    yaml.safeLoad(contents)
-  );
-
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
   });
 
-  // Copy Image Folder to /_site
+  // Copy asset folders to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+  eleventyConfig.addPassthroughCopy("./src/static/fonts");
 
-  // Copy favicon to route of /_site
+  // Copy favicon to root of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // Minify HTML
@@ -54,6 +42,9 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+
+  // Add CSS output to watch target
+  eleventyConfig.addWatchTarget("./src/static/");
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk

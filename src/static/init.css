@@ -1,0 +1,43 @@
+@import 'hiq/css/hiq.css';
+@import 'fontface';
+@import 'variables';
+
+:--heading {
+  font-family: var(--font-family-heading);
+  font-feature-settings: "liga", "dlig", "pnum", "calt";
+}
+
+p, .text-font {
+  font-family: var(--font-family-text);
+}
+
+blockquote {
+  box-shadow: inset 4px 0 3px -4px;
+
+  padding: 0.15rem 1rem 0.25rem;
+
+  blockquote {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  p + blockquote {
+    margin-top: 1rem;
+  }
+
+  cite {
+    font-style: italic;
+  }
+}
+
+a:focus {
+  outline: none;
+}
+
+table {
+  border-bottom: var(--table-cell-border-width) solid var(--table-cell-border-color);
+}
+
+hr {
+  box-shadow: 0 2px 2px 1px color-mod(var(--hiq-horizontal-rule-color) a(30%));
+}

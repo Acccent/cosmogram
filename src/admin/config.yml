@@ -2,9 +2,9 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+  # github integration #
+  name: github
+  repo: acccent/cosmogram
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -14,7 +14,7 @@ local_backend: true
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "src/posts"
+    folder: "src/_posts"
     create: true
     editor:
       preview: false
