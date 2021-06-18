@@ -1,8 +1,18 @@
 #index {
 
+  #cosmogram {
+    position: fixed; top: 0; left: 0; right: 0;
+  	z-index: -2;
+    height: calc(90vh + 10rem);
+    background: url('/static/img/cosmogram.svg') 50% 80% / auto 200% no-repeat;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
   #hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 25vh 0;
   }
 

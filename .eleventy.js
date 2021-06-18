@@ -7,6 +7,7 @@ const readingTime = require('eleventy-plugin-reading-time');
 const load = require('eleventy-load');
 const loadHtml = require('eleventy-load-html');
 const loadJs = require('eleventy-load-js');
+const loadFile = require('eleventy-load-file');
 
 module.exports = function (eleventyConfig) {
   // eleventy-plugin-metagen
@@ -84,6 +85,13 @@ module.exports = function (eleventyConfig) {
             loader: loadJs,
             options: {
               mode: process.env.NODE_ENV,
+            },
+          },
+          {
+            loader: loadFile,
+            options: {
+              name: '[name].[hash].[ext]',
+              publicPath: 'static/js',
             },
           },
         ],

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-500 -500 2645.13 3000">
+	<style>
+		@media all and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+			#glowcolor {
+				flood-opacity: "0.6";
+			}
+		}
+	</style>
+	<defs>
+		<rect id="bg" x="-100%" y="-100%" width="300%" height="300%"/>
+		<g id="basemask">
+			<path d="M661.24 1000.15 a275.925 275.925 0 0 1 322.65 0 L822.565 500 z M500 1500 h645.13 l-66.414-205.883 a275.925 275.925 0 0 1 -512.302 0 z"/>
+			<circle cx="822.565" cy="1166.333" r="204.473"/>
+		</g>
+		<circle id="sp1" cx="822.565" cy="785.838" r="30.564"/>
+		<circle id="sp2" cx="822.565" cy="967.163" r="49.8"/>
+		<circle id="sp3" cx="822.565" cy="1191.796" r="73.963"/>
+		<g id="sp2mask">
+			<path d="M618.092 1166.333 a204.473 204.473 0 0 0 408.946 0 204.473 204.473 0 0 0 -408.946 0 m30.01 -22.504 a174.464 174.464 0 0 1 348.928 0 174.464 174.464 0 0 1 -348.928 0"/>
+			<circle cx="822.565" cy="1117.179" r="117.18"/>
+		</g>
+		<g id="sp3mask">
+			<path d="M737.04 1192.358 a85.252 49.925 0 0 0 171.05 0 85.252 49.925 0 0 0 -17.896 -30.575 73.963 73.963 0 0 1 6.334 29.526 73.963 43.18 0 0 1 -147.926 0 73.963 73.963 0 0 1 6.334 -29.526 85.252 49.925 0 0 0 -17.896 30.575"/>
+		</g>
+		<mask id="maskcombined" x="-100%" y="-100%" width="300%" height="300%">
+			<use xlink:href="#bg" fill="#fff"/>
+			<use xlink:href="#basemask" fill="#000"/>
+			<use xlink:href="#sp1" fill="#fff"/>
+			<use xlink:href="#sp2" fill="#fff"/>
+			<use xlink:href="#sp2mask" fill="#000"/>
+			<use xlink:href="#sp3" fill="#fff"/>
+			<use xlink:href="#sp3mask" fill="#000"/>
+		</mask>
+		<filter id="outerglow" color-interpolation-filters="sRGB" x="-100%" y="-100%" width="300%" height="300%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="400" result="blur"/>
+			<feFlood id="glowcolor" flood-color="#DEFAFF" flood-opacity="0.2"/>
+			<feComposite in2="blur" operator="in"/>
+		</filter>
+		<polygon id="baseglow" points="450,1500 1195.13,1500 822.565,345"/>
+	</defs>
+	<use xlink:href="#baseglow" filter="url(#outerglow)" mask="url(#maskcombined)"/>
+</svg>

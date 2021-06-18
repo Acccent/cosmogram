@@ -8,6 +8,7 @@ specifiers:
   cross-env: ^7.0.3
   cssnano: ^4.1.11
   eleventy-load: ^0.2.0
+  eleventy-load-file: ^0.1.0
   eleventy-load-html: ^0.1.0
   eleventy-load-js: ^0.1.0
   eleventy-plugin-metagen: ^1.3.1
@@ -40,6 +41,7 @@ devDependencies:
   cross-env: 7.0.3
   cssnano: 4.1.11
   eleventy-load: 0.2.0
+  eleventy-load-file: 0.1.0
   eleventy-load-html: 0.1.0
   eleventy-load-js: 0.1.0
   eleventy-plugin-metagen: 1.3.1
@@ -1867,6 +1869,10 @@ packages:
 
   /electron-to-chromium/1.3.752:
     resolution: {integrity: sha512-2Tg+7jSl3oPxgsBsWKh5H83QazTkmWG/cnNwJplmyZc7KcN61+I10oUgaXSVk/NwfvN3BdkKDR4FYuRBQQ2v0A==}
+
+  /eleventy-load-file/0.1.0:
+    resolution: {integrity: sha512-aazzhQLCKt8OWVxvsPqFLLDB/OGcJsuS2cS55QP2QIcRs+NAKuXcb28wltlT0CYAQz6dcvHPRDN1id+bkbWlZA==}
+    dev: true
 
   /eleventy-load-html/0.1.0:
     resolution: {integrity: sha512-p8z1w82wouRx+pmHzvlQ6kYduzSxHmebSrMzeZyK5tcG1wXUR4O8WS4+D85kNe17CZ/1a5jIpVpJSH+8E4d5Yg==}
