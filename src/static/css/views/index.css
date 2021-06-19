@@ -1,19 +1,21 @@
 #index {
 
-  #cosmogram {
-    position: fixed; top: 0; left: 0; right: 0;
-  	z-index: -2;
-    height: calc(90vh + 10rem);
-    background: url('/static/img/cosmogram.svg') 50% 80% / auto 200% no-repeat;
-    opacity: 0.2;
-    pointer-events: none;
-  }
+
+  --hiq-block-element-margin-bottom: 1.2rem;
 
   #hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25vh 0;
+    margin: 35vh 0;
+  }
+
+  article {
+    margin-bottom: calc(3 * var(--hiq-block-element-margin-bottom));
+
+    & > .post-info {
+      opacity: 0.5;
+    }
   }
 
 }

@@ -21,8 +21,6 @@
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
 
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
@@ -30,15 +28,19 @@
     {% endif %}
 
     <script defer src="static/js/core.js"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body id="{{ bodyid }}">
 
     <div id="cosmogram" aria-hidden="true"></div>
 
-    <div class="container">
-      {{ content | safe }}
+    <div id="scroll" x-data="scroll">
+        <div class="container">
+          {{ content | safe }}
 
-      {% include "./partials/footer.html" %}
+          {% include "./partials/footer.html" %}
+        </div>
     </div>
 
   </body>

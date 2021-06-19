@@ -1,4 +1,13 @@
-body.os-theme-light {
+html {
+  overflow: hidden;
+}
+
+#scroll {
+  height: 100vh;
+  width: 100vw;
+}
+
+#scroll.os-theme-light {
   --scrollbar-color: color-mod(var(--color-secondary) tint(80%));
 
   & > .os-scrollbar.os-scrollbar-vertical {

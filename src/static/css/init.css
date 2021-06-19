@@ -13,9 +13,22 @@
 @custom-media --hiq-lower-font-range (min-width: 500px);
 @custom-media --hiq-upper-font-range (min-width: 1200px);
 
+#cosmogram {
+  @mixin is-large;
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: -2;
+  height: calc(70vh + 20em);
+  background: url('/static/img/cosmogram.svg') 50% 70% / auto 200% no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
 :--heading {
   font-family: var(--font-family-heading);
-  font-feature-settings: "liga", "dlig", "pnum", "calt";
+}
+
+h1 {
+  font-feature-settings: "dlig", "ss02";
 }
 
 p, .text-font {

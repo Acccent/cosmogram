@@ -11,6 +11,7 @@ specifiers:
   eleventy-load-file: ^0.1.0
   eleventy-load-html: ^0.1.0
   eleventy-load-js: ^0.1.0
+  eleventy-plugin-heroicons: ^0.2.0
   eleventy-plugin-metagen: ^1.3.1
   eleventy-plugin-reading-time: ^0.0.1
   eleventy-plugin-responsive-images: ^0.0.5
@@ -44,6 +45,7 @@ devDependencies:
   eleventy-load-file: 0.1.0
   eleventy-load-html: 0.1.0
   eleventy-load-js: 0.1.0
+  eleventy-plugin-heroicons: 0.2.0
   eleventy-plugin-metagen: 1.3.1
   eleventy-plugin-reading-time: 0.0.1
   eleventy-plugin-responsive-images: 0.0.5
@@ -1897,6 +1899,10 @@ packages:
 
   /eleventy-load/0.2.0:
     resolution: {integrity: sha512-ketqusnuuTg+R+MIA+vt/4r8fcbcWTYaBLJttXcxUoRTjSi7xUxbNZExLHyoH9DbKk4PQ0muBu0pNyWkl/mFdw==}
+    dev: true
+
+  /eleventy-plugin-heroicons/0.2.0:
+    resolution: {integrity: sha512-pRFOSzZxnpCHg2IM67kpYeOxm2oQTF9fmlgWnjaE8ZFQPk28ms0ISBVxGW73+TFVZe0CEVCk/M2rgBbwNlbPmQ==}
     dev: true
 
   /eleventy-plugin-metagen/1.3.1:

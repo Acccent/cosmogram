@@ -1,0 +1,10 @@
+svg.heroicon {
+  position: relative;
+  top: .15em;
+  height: 1em;
+  width: 1em;
+}
+
+[data-heroicon-name="calendar"] {
+  top: .1em !important;
+}

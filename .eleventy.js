@@ -4,6 +4,7 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const responsiveImages = require("eleventy-plugin-responsive-images");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const readingTime = require('eleventy-plugin-reading-time');
+const heroicons = require('eleventy-plugin-heroicons');
 const load = require('eleventy-load');
 const loadHtml = require('eleventy-load-html');
 const loadJs = require('eleventy-load-js');
@@ -29,6 +30,9 @@ module.exports = function (eleventyConfig) {
 
   // eleventy-plugin-reading-time
   eleventyConfig.addPlugin(readingTime);
+
+  // eleventy-plugin-heroicons
+  eleventyConfig.addPlugin(heroicons, { className: 'heroicon', });
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
