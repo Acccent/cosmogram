@@ -13,15 +13,9 @@
   background: linear-gradient(to bottom, color-mod(var(--hiq-html-background-color) a(90%)) 0 90%, transparent);
   font-size: 16px;
 
-  @media (--no-collapse-bar) {
-    padding: 0.75rem 1.75rem 0.75rem 1rem;
-    background: transparent;
-    font-size: inherit;
-    transform: none !important;
-  }
-
   & > a {
     display: block;
+    letter-spacing: -0.02em;
 
     &#backtotop {
       display: none;
@@ -39,60 +33,70 @@
 
       & > span {
         display: inline-block;
-        opacity: 0;
-        transition: opacity 0.2s linear, transform 0.15s ease-in-out;
       }
+    }
+
+    &:hover span, &:focus span {
+      opacity: 1;
+      transform: translateX(0) !important;
     }
   }
+}
 
-  & > a:first-child {
-    span {
-      transform: translateX(-100%);
+@media (--vertical-labels) {
+  #topnav > a:first-child {
+    transform-origin: 0.5em;
+    transform: rotate(90deg);
+
+    svg {
+      transform: rotate(-90deg);
     }
 
-    @media (--vertical-labels)  {
-      transform-origin: 0.5em;
-      transform: rotate(90deg);
+    & > label {
+      transform: rotate(180deg) translateY(-0.1em);
 
-      svg {
-        transform: rotate(-90deg);
-      }
-
-      label {
-        transform: rotate(180deg) translateY(-0.15em);
-      }
-
-      span {
+      & > span {
         transform: translateX(100%);
       }
     }
   }
 
-  & > a:last-child {
-    span {
-      transform: translateX(100%);
+  #topnav > a:last-child {
+    transform-origin: calc(100% - 0.5em);
+    transform: rotate(-90deg);
+
+    svg {
+      transform: rotate(90deg);
     }
 
-    @media (--vertical-labels)  {
-      transform-origin: calc(100% - 0.5em);
-      transform: rotate(-90deg);
+    label {
+      transform: rotate(180deg) translateY(-0.1em);
 
-      svg {
-        transform: rotate(90deg);
-      }
-
-      label {
-        transform: rotate(180deg) translateY(-0.15em);
-      }
-
-      span {
+      & > span {
         transform: translateX(-100%);
       }
     }
   }
+}
 
-  & > a:hover span, & > a:focus span {
-    opacity: 1;
-    transform: translateX(0);
+@media (--no-collapse-bar) {
+  #topnav {
+    padding: 0.75rem 1.75rem 0.75rem 1rem;
+    background: transparent;
+    font-size: inherit;
+    transform: none !important;
+
+    & > a > label > span {
+      opacity: 0;
+      transition: opacity 0.2s linear, transform 0.15s ease-in-out;
+    }
+
+    & > a:first-child span {
+      transform: translateX(-100%);
+    }
+
+    & > a:last-child span {
+      transform: translateX(100%);
+    }
   }
 }

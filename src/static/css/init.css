@@ -44,6 +44,10 @@ p, .text-font {
   --hiq-unordered-list-style: "~ ";
 }
 
+.post-info {
+  color: var(--text-color-ui);
+}
+
 blockquote {
   box-shadow: inset 4px 0 3px -4px;
 

@@ -15,10 +15,6 @@
     & > .post-description {
       margin-bottom: 0.5rem;
     }
-
-    & > .post-info {
-      opacity: 0.5;
-    }
   }
 
 }

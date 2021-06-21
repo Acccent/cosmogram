@@ -10,7 +10,7 @@
 
       & > .header-anchor {
         position: absolute;
-        bottom: 0;
+        bottom: 0.15em;
         right: 100%;
         height: 1.4em;
         padding-right: 0.5em;
@@ -27,16 +27,8 @@
       }
     }
 
-    h2 > .header-anchor {
-      bottom: 0.2em;
-    }
-
     & > .post-info {
       margin-bottom: calc(2 * var(--hiq-block-element-margin-bottom));
-
-      & > small {
-        opacity: 0.5;
-      }
     }
 
     & > .post-content :--heading {

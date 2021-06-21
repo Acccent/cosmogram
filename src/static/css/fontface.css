@@ -3,7 +3,7 @@
     font-family: 'Inknut Antiqua';
     font-style: normal;
     font-weight: $(weight);
-    font-display: swap;
+    font-display: block;
     src: url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff2") format('woff2'),
          url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff") format('woff');
   }
@@ -15,7 +15,7 @@
       font-family: 'Reforma';
       font-style: $(style);
       font-weight: $(weight);
-      font-display: swap;
+      font-display: block;
       src: url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff2") format('woff2'),
            url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff") format('woff');
     }
@@ -27,7 +27,7 @@
     font-family: 'JuliaMono';
     font-style: normal;
     font-weight: $(weight);
-    font-display: swap;
+    font-display: block;
     src: url("/static/fonts/JuliaMono/JuliaMono-$(w).woff2") format('woff2');
   }
 }

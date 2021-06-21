@@ -45,9 +45,10 @@
   --hiq-text-rendering: optimizeLegibility;
   --hiq-letter-spacing-base: 0;
   --hiq-text-color: var(--hiq-color-gray-7);
+  --text-color-ui: color-mod(var(--hiq-text-color) a(40%));
 
   /* font families */
-  --hiq-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  --hiq-font-family-base: JuliaMono, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
   --hiq-font-family-monospace: JuliaMono, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-family-text: 'Reforma', var(--hiq-font-family-base);
   --font-family-heading: 'Inknut Antiqua', var(--hiq-font-family-base);
