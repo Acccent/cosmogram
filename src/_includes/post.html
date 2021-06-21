@@ -1,0 +1,38 @@
+---
+layout: default
+bodyid: post
+---
+
+{% include "./partials/topnav.html" %}
+
+<article>
+
+  <h1>{{ title }}</h1>
+
+  <div class="post-info">
+    <a class="header-anchor ui" href="{{ url }}">{% heroicon "outline", "link" %}</a>
+    <small>{% heroicon "outline", "calendar" %} Published on <time>{{ date | readableDate }}</time> — {% heroicon "outline", "clock" %} {{ content | readingTime }} read</small>
+  </div>
+
+  <div class="post-content text-font">
+    {{ content | safe }}
+  </div>
+
+  {% set next = collections.post | getPreviousCollectionItem(page) %}
+  {% set prev = collections.post | getNextCollectionItem(page) %}
+
+</article>
+
+<hr>
+
+{% if prev or next %}
+  <nav id="post-navigation">
+    {% if prev %}
+      <a href="{{ prev.url }}">{% heroicon "outline", "chevron-left" %} Previous: {{ prev.data.title }}</a>
+    {% endif %}
+    <div class="separator"></div>
+    {% if next %}
+      <a href="{{ next.url }}">Next: {{ next.data.title }} {% heroicon "outline", "chevron-right" %}</a>
+    {% endif %}
+  </nav>
+{% endif %}

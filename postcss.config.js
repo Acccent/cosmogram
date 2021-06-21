@@ -5,14 +5,15 @@ module.exports = {
     require('postcss-mixins'),
     require('postcss-custom-selectors'),
     require('postcss-nested'),
+    require('postcss-media-minmax'),
     require('postcss-custom-media'),
     // require('colorguard'),
     require('postcss-color-mod-function'),
     require('autoprefixer'),
-    ...(process.env.NODE_ENV === "production"
+    ...(process.env.NODE_ENV === 'production'
       ? [
           require('cssnano')({
-            preset: "default",
+            preset: 'default',
           }),
         ]
       : []),

@@ -1,4 +1,5 @@
 @import 'fontface';
+@import 'overlayscrollbars/css/OverlayScrollbars.min.css';
 
 @import 'hiq/css/utility/*.css';
 @import 'hiq/css/base/*.css';
@@ -23,6 +24,12 @@
   pointer-events: none;
 }
 
+#container {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 :--heading {
   font-family: var(--font-family-heading);
 }
@@ -33,6 +40,8 @@ h1 {
 
 p, .text-font {
   font-family: var(--font-family-text);
+  --hiq-list-margin-left: 1em;
+  --hiq-unordered-list-style: "~ ";
 }
 
 blockquote {
@@ -58,10 +67,27 @@ a:focus {
   outline: none;
 }
 
+a.ui:visited {
+  color: var(--link-color);
+
+  &:hover, &:focus {
+    color: var(--link-hover-color);
+  }
+
+  &:active {
+    color: var(--link-active-color);
+  }
+}
+
+code {
+  padding-bottom: calc(var(--code-padding-vertical) - 0.05rem);
+}
+
 table {
   border-bottom: var(--table-cell-border-width) solid var(--table-cell-border-color);
 }
 
 hr {
-  box-shadow: 0 2px 2px 1px color-mod(var(--hiq-horizontal-rule-color) a(30%));
+  width: 100%;
+  box-shadow: 0 2px 2px 0 color-mod(var(--hiq-horizontal-rule-color) a(30%));
 }

@@ -1,17 +1,21 @@
-html {
-  overflow: hidden;
+/* html {
+  overflow: auto;
+}
+
+body {
+  height: 100vh;
 }
 
 #scroll {
-  height: 100vh;
-  width: 100vw;
-}
+  height: 100%;
+  width: 100%;
+} */
 
-#scroll.os-theme-light {
+.os-theme-light {
   --scrollbar-color: color-mod(var(--color-secondary) tint(80%));
 
   & > .os-scrollbar.os-scrollbar-vertical {
-    width: 25px;
+    width: 1rem;
     padding: 0 2px;
     pointer-events: auto;
 

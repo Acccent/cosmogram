@@ -5,21 +5,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% metagen
-      title=title,
-      desc=decription,
+      title=metatitle or title,
+      desc=metadescription or decription,
       url="https://cosmogr.am"+page.url,
       img="",
       img_alt="",
       twitter_card_type="summary_large_image",
       twitter_handle="acccent",
-      name="robin"
+      name=author
     %}
     {% block head %}{% endblock %}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css"/>
     <link rel="stylesheet" href="/static/css/style.css"/>
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
 
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
@@ -28,19 +25,15 @@
     {% endif %}
 
     <script defer src="static/js/core.js"></script>
-
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body id="{{ bodyid }}">
 
     <div id="cosmogram" aria-hidden="true"></div>
 
-    <div id="scroll" x-data="scroll">
-        <div class="container">
-          {{ content | safe }}
+    <div id="container" class="container">
+      {{ content | safe }}
 
-          {% include "./partials/footer.html" %}
-        </div>
+      {% include "./partials/footer.html" %}
     </div>
 
   </body>

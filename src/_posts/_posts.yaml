@@ -1,0 +1,10 @@
+---
+layout: post
+permalink: posts/{{ page.fileSlug }}.html
+eleventyComputed:
+  title: "{{ title }}"
+  metatitle: "{{ title }} | {{ siteinfo.title }}"
+  author: "{{ siteinfo.author }}"
+tags: [
+  post
+]

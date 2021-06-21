@@ -1,22 +1,21 @@
----json
-{
-  "permalink": "feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "Cosmogram",
-    "subtitle": "posts by robin",
-    "url": "https://cosmogr.am/",
-    "feedUrl": "https://cosmogr.am/feed.xml",
-    "author": {
-      "name": "Robin Vilain",
-      "email": "cosmogram@robin-v.net"
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  metadata: {
+    url: https://cosmogr.am/,
+    feedUrl: https://cosmogr.am/feed.xml,
+    title: "{{ siteinfo.title }}",
+    subtitle: "{{ siteinfo.description }}",
+    author: {
+      name: "{{ siteinfo.author }}",
+      email: "{{ siteinfo.email }}"
     }
   }
-}
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
+  <title>{{ siteinfo.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>

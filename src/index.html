@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Cosmogram
-description: posts by robin
 bodyid: index
 path: home
+eleventyComputed:
+  title: "{{ siteinfo.title }}"
+  description: "{{ siteinfo.description }}"
 ---
 
 <header id="hero">
   <h1>{{ title }}</h1>
-  <p>posts by <a href="https://robin-v.net" target="_blank">robin</a>. also on <a href="https://twitter.com/acccent" target="_blank">twitter</a>.</p>
+  <span class="text-font">posts and experiments by <a href="https://robin-v.net" target="_blank">robin</a>. also on <a href="https://twitter.com/acccent" target="_blank">twitter</a>.</span>
 </header>
 
-<main id="postslist">
-  {% set postslist = collections.post %}
+<main>
 
-  {% for post in postslist | reverse %}
+  {% for post in collections.home | reverse %}
   <article>
 
     <h2>
@@ -28,13 +28,13 @@ path: home
     </h2>
 
     {% if post.data.description %}
-      <p>
+      <p class="post-description">
         {{ post.data.description }}
       </p>
     {% endif %}
 
-    <div class="post-info is-small">
-      {% heroicon "outline", "calendar" %} <time>{{ post.date | readableDate }}</time> — {% heroicon "outline", "clock" %} {{ post | readingTime }}
+    <div class="post-info">
+      <small>{% heroicon "outline", "calendar" %} <time>{{ post.date | readableDate }}</time> — {% heroicon "outline", "clock" %} {{ post | readingTime }}</small>
     </div>
 
   </article>

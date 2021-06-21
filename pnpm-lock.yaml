@@ -18,8 +18,12 @@ specifiers:
   eleventy-plugin-youtube-embed: ^1.6.3
   hiq: ^4.1.9
   html-minifier: ^4.0.0
+  js-yaml: ^4.1.0
   luxon: ^1.27.0
+  markdown-it: ^12.0.6
+  markdown-it-anchor: ^8.0.2
   npm-run-all: ^4.1.5
+  overlayscrollbars: ^1.13.1
   postcss: ^8.3.4
   postcss-cli: ^8.3.1
   postcss-color-mod-function: ^3.0.3
@@ -27,12 +31,14 @@ specifiers:
   postcss-custom-selectors: ^6.0.0
   postcss-each: ^1.0.0
   postcss-easy-import: ^3.0.0
+  postcss-media-minmax: ^5.0.0
   postcss-mixins: ^8.1.0
   postcss-nested: ^5.0.5
   rimraf: ^3.0.2
 
 dependencies:
   hiq: 4.1.9
+  overlayscrollbars: 1.13.1
 
 devDependencies:
   '@11ty/eleventy': 0.12.1
@@ -51,7 +57,10 @@ devDependencies:
   eleventy-plugin-responsive-images: 0.0.5
   eleventy-plugin-youtube-embed: 1.6.3
   html-minifier: 4.0.0
+  js-yaml: 4.1.0
   luxon: 1.27.0
+  markdown-it: 12.0.6
+  markdown-it-anchor: 8.0.2_markdown-it@12.0.6
   npm-run-all: 4.1.5
   postcss: 8.3.4
   postcss-cli: 8.3.1_postcss@8.3.4
@@ -60,6 +69,7 @@ devDependencies:
   postcss-custom-selectors: 6.0.0_postcss@8.3.4
   postcss-each: 1.0.0_postcss@8.3.4
   postcss-easy-import: 3.0.0
+  postcss-media-minmax: 5.0.0_postcss@8.3.4
   postcss-mixins: 8.1.0_postcss@8.3.4
   postcss-nested: 5.0.5_postcss@8.3.4
   rimraf: 3.0.2
@@ -668,6 +678,10 @@ packages:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
       sprintf-js: 1.0.3
+
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: true
 
   /arr-diff/4.0.0:
     resolution: {integrity: sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=}
@@ -2008,6 +2022,10 @@ packages:
     resolution: {integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==}
     dev: true
 
+  /entities/2.1.0:
+    resolution: {integrity: sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w==}
+    dev: true
+
   /entities/2.2.0:
     resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
 
@@ -3176,6 +3194,13 @@ packages:
       argparse: 1.0.10
       esprima: 4.0.1
 
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: true
+
   /jsdom/16.6.0:
     resolution: {integrity: sha512-Ty1vmF4NHJkolaEmdjtxTfSfkdb8Ywarwf63f+F8/mDD1uLSSWDxDuMiZxiPhwunLrn9LOSVItWj4bLYsLN3Dg==}
     engines: {node: '>=10'}
@@ -3302,6 +3327,12 @@ packages:
 
   /linkify-it/2.2.0:
     resolution: {integrity: sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==}
+    dependencies:
+      uc.micro: 1.0.6
+    dev: true
+
+  /linkify-it/3.0.2:
+    resolution: {integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==}
     dependencies:
       uc.micro: 1.0.6
     dev: true
@@ -3457,6 +3488,14 @@ packages:
       object-visit: 1.0.1
     dev: false
 
+  /markdown-it-anchor/8.0.2_markdown-it@12.0.6:
+    resolution: {integrity: sha512-0sTEycO/U9KyBlx7s4+i27H26z1n3ImToXTS7yC9/bdynFAbV4I+yYs+Lyp7VkGe2U0iFwCyzv3wPc/hUYw2AQ==}
+    peerDependencies:
+      markdown-it: '*'
+    dependencies:
+      markdown-it: 12.0.6
+    dev: true
+
   /markdown-it/10.0.0:
     resolution: {integrity: sha512-YWOP1j7UbDNz+TumYP1kpwnP0aEa711cJjrAQrzd0UXlbJfc5aAq0F/PZHjiioqDC1NKgvIMX+o+9Bk7yuM2dg==}
     hasBin: true
@@ -3464,6 +3503,17 @@ packages:
       argparse: 1.0.10
       entities: 2.0.3
       linkify-it: 2.2.0
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: true
+
+  /markdown-it/12.0.6:
+    resolution: {integrity: sha512-qv3sVLl4lMT96LLtR7xeRJX11OUFjsaD5oVat2/SNBIb21bJXwal2+SklcRbTwGwqWpWH/HRtYavOoJE+seL8w==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 2.1.0
+      linkify-it: 3.0.2
       mdurl: 1.0.1
       uc.micro: 1.0.6
     dev: true
@@ -3854,6 +3904,10 @@ packages:
       type-check: 0.3.2
       word-wrap: 1.2.3
     dev: true
+
+  /overlayscrollbars/1.13.1:
+    resolution: {integrity: sha512-gIQfzgGgu1wy80EB4/6DaJGHMEGmizq27xHIESrzXq0Y/J0Ay1P3DWk6tuVmEPIZH15zaBlxeEJOqdJKmowHCQ==}
+    dev: false
 
   /p-limit/2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
@@ -4268,6 +4322,15 @@ packages:
       import-cwd: 3.0.0
       lilconfig: 2.0.3
       yaml: 1.10.2
+    dev: true
+
+  /postcss-media-minmax/5.0.0_postcss@8.3.4:
+    resolution: {integrity: sha512-yDUvFf9QdFZTuCUg0g0uNSHVlJ5X1lSzDZjPSFaiCWvjgsvu8vEVxtahPrLMinIDEEGnx6cBe6iqdx5YWz08wQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: 8.3.4
     dev: true
 
   /postcss-merge-longhand/4.0.11:

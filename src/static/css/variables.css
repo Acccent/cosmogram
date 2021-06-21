@@ -30,6 +30,7 @@
 
   /* margins */
   --hiq-block-element-margin-bottom: 1.5rem;
+  --vertical-whitespace: calc(6 * var(--hiq-block-element-margin-bottom));
 
   /* borders outlines */
   --hiq-border-radius: 0.1rem;
@@ -52,7 +53,7 @@
   --font-family-heading: 'Inknut Antiqua', var(--hiq-font-family-base);
 
   /* responsive typography */
-  --hiq-unitless-min-font-size: 12;
+  --hiq-unitless-min-font-size: 14;
   --hiq-unitless-max-font-size: 20;
   --hiq-unitless-lower-font-range: 500;
   --hiq-unitless-upper-font-range: 1200;
@@ -104,8 +105,8 @@
   --hiq-selection-color: color-mod(var(--color-secondary) a(60%));
 
   /* lists */
-  --hiq-list-margin-left: 1rem;
-  --hiq-unordered-list-style: disc;
+  --hiq-list-margin-left: 0.8em;
+  --hiq-unordered-list-style: "– ";
 
   /* description lists */
   --hiq-description-list-title-font-weight: var(--hiq-font-weight-semibold);
@@ -117,7 +118,7 @@
 
   /* horizontal rules */
   --hiq-horizontal-rule-height: 1px;
-  --hiq-horizontal-rule-color: var(--color-primarydark);
+  --hiq-horizontal-rule-color: color-mod(var(--hiq-text-color) a(60%));
 
   /* links */
   --hiq-link-color: var(--hiq-color-primary);
