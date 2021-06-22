@@ -1,5 +1,6 @@
-@custom-media --no-collapse-bar (width >= 1300px);
+@custom-media --no-collapse-bar (1300px <= width);
 @custom-media --vertical-labels (1300px <= width <= 1500px);
+@custom-media --horizontal-labels (1500px < width);
 
 #topnav {
   display: flex;
@@ -21,60 +22,26 @@
       display: none;
     }
 
-    & > svg {
-      height: 1.7em;
+    & > svg, & > label {
+      display: inline-block;
+      top: 0;
+      height: 1.7rem;
     }
 
     & > label {
-      display: inline-block;
       margin: 0 0.3em;
       overflow: hidden;
       cursor: pointer;
 
       & > span {
         display: inline-block;
+        line-height: 1.7rem;
       }
     }
 
     &:hover span, &:focus span {
       opacity: 1;
       transform: translateX(0) !important;
-    }
-  }
-}
-
-@media (--vertical-labels) {
-  #topnav > a:first-child {
-    transform-origin: 0.5em;
-    transform: rotate(90deg);
-
-    svg {
-      transform: rotate(-90deg);
-    }
-
-    & > label {
-      transform: rotate(180deg) translateY(-0.1em);
-
-      & > span {
-        transform: translateX(100%);
-      }
-    }
-  }
-
-  #topnav > a:last-child {
-    transform-origin: calc(100% - 0.5em);
-    transform: rotate(-90deg);
-
-    svg {
-      transform: rotate(90deg);
-    }
-
-    label {
-      transform: rotate(180deg) translateY(-0.1em);
-
-      & > span {
-        transform: translateX(-100%);
-      }
     }
   }
 }
@@ -98,5 +65,47 @@
     & > a:last-child span {
       transform: translateX(100%);
     }
+  }
+}
+
+@media (--vertical-labels) {
+  #topnav > a:first-child {
+    transform-origin: 0.5em;
+    transform: rotate(90deg);
+
+    svg {
+      transform: rotate(-90deg);
+    }
+
+    & > label {
+      transform: rotate(180deg);
+
+      & > span {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  #topnav > a:last-child {
+    transform-origin: calc(100% - 0.5em);
+    transform: rotate(-90deg);
+
+    svg {
+      transform: rotate(90deg);
+    }
+
+    label {
+      transform: rotate(180deg);
+
+      & > span {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+@media (--horizontal-labels) {
+  #topnav > a > label {
+    margin-bottom: -0.1em;
   }
 }

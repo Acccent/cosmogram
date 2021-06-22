@@ -39,6 +39,24 @@
   #post-navigation {
     display: flex;
 
+    a {
+      display: flex;
+
+      &:last-child {
+        text-align: right;
+      }
+
+      & > svg {
+        flex: 0 0 auto;
+        top: 0.1em;
+        font-size: 1.25em;
+      }
+
+      & > span {
+        margin: 0 0.5rem;
+      }
+    }
+
     .separator {
       flex: 1 1 auto;
       min-width: 2rem;

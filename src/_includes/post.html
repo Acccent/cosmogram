@@ -28,11 +28,11 @@ bodyid: post
 {% if prev or next %}
   <nav id="post-navigation">
     {% if prev %}
-      <a href="{{ prev.url }}">{% heroicon "outline", "chevron-left" %} Previous: {{ prev.data.title }}</a>
+      <a href="{{ prev.url }}">{% heroicon "outline", "chevron-left" %}<span>{{ prev.data.title }}</span></a>
     {% endif %}
     <div class="separator"></div>
     {% if next %}
-      <a href="{{ next.url }}">Next: {{ next.data.title }} {% heroicon "outline", "chevron-right" %}</a>
+      <a href="{{ next.url }}"><span>{{ next.data.title }}</span>{% heroicon "outline", "chevron-right" %}</a>
     {% endif %}
   </nav>
 {% endif %}
