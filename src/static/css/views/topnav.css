@@ -1,6 +1,5 @@
-@custom-media --no-collapse-bar (1300px <= width);
-@custom-media --vertical-labels (1300px <= width <= 1500px);
-@custom-media --horizontal-labels (1500px < width);
+@custom-media --no-collapse-bar (min-width: 1300px);
+@custom-media --vertical-labels (min-width: 1300px) and (max-width: 1500px);
 
 #topnav {
   display: flex;
@@ -20,6 +19,7 @@
 
     &#backtotop {
       display: none;
+      opacity: 0;
     }
 
     & > svg, & > label {
@@ -101,11 +101,5 @@
         transform: translateX(-100%);
       }
     }
-  }
-}
-
-@media (--horizontal-labels) {
-  #topnav > a > label {
-    margin-bottom: -0.1em;
   }
 }

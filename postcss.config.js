@@ -4,11 +4,9 @@ module.exports = {
     require('postcss-each'),
     require('postcss-mixins'),
     require('postcss-custom-selectors'),
-    require('postcss-nested'),
-    require('postcss-media-minmax'),
     require('postcss-custom-media'),
-    // require('colorguard'),
     require('postcss-color-mod-function'),
+    require('postcss-nested'),
     require('autoprefixer'),
     ...(process.env.NODE_ENV === 'production'
       ? [
@@ -17,5 +15,6 @@ module.exports = {
           }),
         ]
       : []),
+    // require('colorguard'),
   ],
 };

@@ -38,6 +38,7 @@
 
   #post-navigation {
     display: flex;
+    flex-wrap: nowrap;
 
     a {
       display: flex;
