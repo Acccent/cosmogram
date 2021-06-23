@@ -18,7 +18,24 @@ eleventyComputed:
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      CMS.registerPreviewStyle("/style.css");
+      CMS.registerPreviewStyle("/admin/style.css");
+
+      const PostPreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+          return h('div', {'id': 'post'},
+            h('article', {},
+              h('h1', {}, entry.getIn(['data', 'title'])),
+              h('div', {'className': 'post-info'},
+                h('small', {}, `Published on ${entry.getIn(['data', 'date'])}`),
+              ),
+              h('div', {'className': 'post-content text-font'}, this.props.widgetFor('body'))
+            )
+          );
+        }
+      });
+
+      CMS.registerPreviewTemplate('posts', PostPreview);
     </script>
   </body>
 
