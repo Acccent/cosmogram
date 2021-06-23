@@ -71,15 +71,14 @@ module.exports = function (eleventyConfig) {
 
   // Copy admin config to /_site
   eleventyConfig.addPassthroughCopy({
-    './src/admin/config.yml': './admin/config.yml',
+    './src/pages/admin/config.yml': 'admin/config.yml',
   });
 
-  // Copy asset folders to /_site
-  eleventyConfig.addPassthroughCopy('./src/static/img');
-  eleventyConfig.addPassthroughCopy('./src/static/fonts');
+  // Copy assets to /_site
+  eleventyConfig.addPassthroughCopy({'src/assets': 'assets/'});
 
   // Copy favicon to root of /_site
-  eleventyConfig.addPassthroughCopy('./src/favicon.ico');
+  eleventyConfig.addPassthroughCopy({'src/favicon.ico': 'favicon.ico'});
 
   // Create merged collection for homepage
   eleventyConfig.addCollection('home', api => {
@@ -122,7 +121,7 @@ module.exports = function (eleventyConfig) {
             loader: loadFile,
             options: {
               name: '[name].[hash].[ext]',
-              publicPath: 'static/js',
+              publicPath: '/',
             },
           },
         ],
@@ -130,14 +129,15 @@ module.exports = function (eleventyConfig) {
     ],
   });
 
-  // Add CSS output to watch target
-  eleventyConfig.addWatchTarget('./src/static/');
+  // Add CSS & JS output to watch target
+  eleventyConfig.addWatchTarget('./src/build/');
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
     dir: {
       input: 'src',
+      includes: 'includes',
     },
     htmlTemplateEngine: 'njk',
   };

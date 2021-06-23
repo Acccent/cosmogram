@@ -3,4 +3,11 @@ footer {
   padding: var(--vertical-whitespace) 0 1rem;
   text-align: center;
   opacity: 0.4;
+
+  & > small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
 }

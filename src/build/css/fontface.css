@@ -4,8 +4,8 @@
     font-style: normal;
     font-weight: $(weight);
     font-display: block;
-    src: url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff2") format('woff2'),
-         url("/static/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff") format('woff');
+    src: url("/assets/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff2") format('woff2'),
+         url("/assets/fonts/Inknut Antiqua/InknutAntiqua-$(w).woff") format('woff');
   }
 }
 
@@ -16,8 +16,8 @@
       font-style: $(style);
       font-weight: $(weight);
       font-display: block;
-      src: url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff2") format('woff2'),
-           url("/static/fonts/Reforma/Reforma2018-$(w)$(s).woff") format('woff');
+      src: url("/assets/fonts/Reforma/Reforma2018-$(w)$(s).woff2") format('woff2'),
+           url("/assets/fonts/Reforma/Reforma2018-$(w)$(s).woff") format('woff');
     }
   }
 }
@@ -28,6 +28,6 @@
     font-style: normal;
     font-weight: $(weight);
     font-display: block;
-    src: url("/static/fonts/JuliaMono/JuliaMono-$(w).woff2") format('woff2');
+    src: url("/assets/fonts/JuliaMono/JuliaMono-$(w).woff2") format('woff2');
   }
 }

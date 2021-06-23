@@ -3,10 +3,10 @@
     "clean": "rimraf _site",
     "serve": "npm-run-all clean -p serve:*",
     "serve:eleventy": "eleventy --serve",
-    "serve:css": "postcss src/static/css/init.css -o _site/static/css/style.css -w",
+    "serve:css": "postcss src/build/css/init.css -o _site/style.css -w",
     "build": "cross-env NODE_ENV=production run-s clean build:*",
     "build:eleventy": "eleventy",
-    "build:css": "postcss src/static/css/init.css -o _site/static/css/style.css",
+    "build:css": "postcss src/build/css/init.css -o _site/style.css",
     "debug": "set DEBUG=* & eleventy"
   },
   "devDependencies": {
