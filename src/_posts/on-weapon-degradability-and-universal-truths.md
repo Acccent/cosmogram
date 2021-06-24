@@ -12,7 +12,7 @@ A few days ago, Nintendo dropped a new trailer for the upcoming Breath of the Wi
 https://twitter.com/acccent/status/1405086128856879107
 
 I don't like it! And well... who cares, right? It's just a game system. But strangely, whenever this particular topic is brought up, there's a whole range of people who will proclaim that they *do* like it, and that not liking it is an unequivocal demonstration of one's incapability to grasp the subtleties of game design.\
-(To anyone reading this who tweeted something along the lines of '*weapon degradation is good actually and if you can't see why you're a chump*': I get it. it's twitter. what are you gonna do, post a nuanced take?)
+(To anyone reading this who tweeted something along the lines of *'weapon degradation is good actually and if you can't see why you're a chump'*: I get it. it's twitter. what are you gonna do, post a nuanced take?)
 
 Anyway, because it's a system that can seem frustrating on the surface, it's only natural for anyone whose identity is founded in part on 'thinking about stuff' to dismiss that first layer and assume the opposite must be true, and in one fell swoop, to also dismiss differing opinions. So for the sake of this discussion let's go ahead and acknowledge that a multitude of *actually thought-out* opinions can coexist, opposite of each other but on equal levels.
 
@@ -61,7 +61,7 @@ No. Weapon degradation is good, actually, and if you can't see why you're a chum
 
 For more casual players, the fact that weapons can break means they will be surprised when it happens to them, when they might even have considered switching otherwise. For completionists, it might force them to adjust their instincts and to not see weapons as trophies to amass, but as contextual tools. For hoarders, the abundance of weapons (which is a corollary to the degradation system) means they can freely use them, safe in the knowledge trhat more copies shouldn't be too hard to find.
 
-For people who have a particular mix of attributes like '*naturally inclined to play creatively*' and '*negatively affected by extrinsic motivators,*' the system is a disaster, as it quite efficiently prevents them from experiencing the game the intended way, when they would have without it. But we have to assume the designers at Nintendo thought about that, considered the proportion of the audience it represented, the available resources for the game's development, and probably a number of additional factors, and ultimately decided: sorry robin. sucks to be u bud.
+For people who have a particular mix of attributes like *'naturally inclined to play creatively'* and *'negatively affected by extrinsic motivators'*, the system is a disaster, as it quite efficiently prevents them from experiencing the game the intended way, when they would have without it. But we have to assume the designers at Nintendo thought about that, considered the proportion of the audience it represented, the available resources for the game's development, and probably a number of additional factors, and ultimately decided: sorry robin. sucks to be u bud.
 
 ### I would rather it didn't suck to be me tho
 
@@ -73,7 +73,7 @@ That's what I mean whenever I say I don't like weapon degradation in most games:
 
 ## Anyway.
 
-The core point of this lenghty ramble is this: **designs serve specific purposes within specific contexts**, and reducing them to binaries is counterproductive. And we can't know what the purpose *or* the context of a system like weapon degradability even is! So we really ought to be welcoming of the multitude of experiences it enabled, rather than trying to identify the one good take.
+The core point of this lengthy ramble is this: **designs serve specific purposes within specific contexts**, and reducing them to binaries is counterproductive. And we can't know what the purpose *or* the context of a system like weapon degradability even is! So we really ought to be welcoming of the multitude of experiences it enabled, rather than trying to identify the one good take.
 
 And, similarly, talking about designs through a binary lens – do they make the game better or worse – is limiting and reductive. These topics are so dense and so deep and so multidimensional! There is so much to explore!
 
