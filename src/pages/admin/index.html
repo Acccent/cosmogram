@@ -23,7 +23,7 @@ eleventyComputed:
       const PostPreview = createClass({
         render: function() {
           const entry = this.props.entry;
-          return h('div', {'id': 'post'},
+          return h('div', {'id': 'post', 'className': 'container'},
             h('article', {},
               h('h1', {}, entry.getIn(['data', 'title'])),
               h('div', {'className': 'post-info'},

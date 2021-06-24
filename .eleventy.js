@@ -73,6 +73,8 @@ module.exports = function (eleventyConfig) {
         embedClass: 'embed twitter',
         doNotTrack: true,
         theme: 'dark',
+        align: 'center',
+        width: 550,
       },
     },
   });

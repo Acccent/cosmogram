@@ -4,8 +4,13 @@
   min-height: 100vh;
 }
 
+.embed {
+  margin: 0 auto var(--hiq-block-element-margin-bottom);
+}
+
 :--heading {
   font-family: var(--font-family-heading);
+  color: var(--text-color-heading);
 }
 
 h1 {

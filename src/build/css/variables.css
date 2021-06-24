@@ -45,6 +45,7 @@
   --hiq-text-rendering: optimizeLegibility;
   --hiq-letter-spacing-base: 0;
   --hiq-text-color: var(--hiq-color-gray-7);
+  --text-color-heading: var(--hiq-color-gray-8);
   --text-color-ui: color-mod(var(--hiq-text-color) a(40%));
 
   /* font families */
