@@ -15,11 +15,15 @@ h1 {
 p, .text-font {
   font-family: var(--font-family-text);
   --hiq-list-margin-left: 1em;
-  --hiq-unordered-list-style: "~ ";
+  --hiq-unordered-list-style: "– ";
 }
 
 .post-info {
   color: var(--text-color-ui);
+}
+
+li {
+  margin-top: 0.15em;
 }
 
 blockquote {

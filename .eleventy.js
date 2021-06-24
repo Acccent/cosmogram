@@ -7,10 +7,11 @@ const loadFile = require('eleventy-load-file');
 const metagen = require('eleventy-plugin-metagen');
 const rss = require('@11ty/eleventy-plugin-rss');
 const markdownIt = require('markdown-it');
+const markdownItReplacements = require('markdown-it-replacements');
 const markdownItAnchor = require('markdown-it-anchor');
 const responsiveImages = require('eleventy-plugin-responsive-images');
 const readingTime = require('eleventy-plugin-reading-time');
-const embedYouTube = require('eleventy-plugin-youtube-embed');
+const embed = require('eleventy-plugin-embed-everything');
 const heroicons = require('eleventy-plugin-heroicons');
 
 module.exports = function (eleventyConfig) {
@@ -20,11 +21,26 @@ module.exports = function (eleventyConfig) {
   // eleventy-plugin-rss
   eleventyConfig.addPlugin(rss);
 
-  // Change default Markdown preprocessor to automatically add ids to headers
+  // Configure MD replacements
+  const replacements = [
+    [/(\s)'(\S)/g, '$1\u2018$2'],
+    [/(\S)'(\s)/g, '$1\u2019$2'],
+    [/(\s)"(\S)/g, '$1\u201c$2'],
+    [/(\S)"(\s)/g, '$1\u201d$2']
+  ];
+  for(const r of replacements) {
+    markdownItReplacements.replacements.push(
+      { name: r[1], re: r[0], sub: r[1], default: true }
+    );
+  }
+
+  // Change default Markdown preprocessor to automatically add ids to headers + above replacements
   eleventyConfig.setLibrary('md',
     markdownIt({
       html: true,
-    }).use(markdownItAnchor, {
+    })
+    .use(markdownItReplacements, { ellipsis: false })
+    .use(markdownItAnchor, {
       level: [2],
       tabindex: false,
       permalink: markdownItAnchor.permalink.ariaHidden({
@@ -44,10 +60,21 @@ module.exports = function (eleventyConfig) {
   // eleventy-plugin-reading-time
   eleventyConfig.addPlugin(readingTime);
 
-  // eleventy-plugin-youtube-embed
-  eleventyConfig.addPlugin(embedYouTube, {
-    embedClass: 'youtube-embed',
-    lite: true,
+  // eleventy-plugin-embed-everything
+  eleventyConfig.addPlugin(embed, {
+    youtube: {
+      options: {
+        embedClass: 'embed youtube',
+        lite: true,
+      },
+    },
+    twitter: {
+      options: {
+        embedClass: 'embed twitter',
+        doNotTrack: true,
+        theme: 'dark',
+      },
+    },
   });
 
   // eleventy-plugin-heroicons
