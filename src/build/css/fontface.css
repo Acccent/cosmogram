@@ -10,15 +10,21 @@
 }
 
 @each $w, $weight in (Blanca, Gris, Negra), (300, 400, 700) {
-  @each $s, $style in ( , Italica), (normal, italic) {
-    @font-face {
-      font-family: 'Reforma';
-      font-style: $(style);
-      font-weight: $(weight);
-      font-display: block;
-      src: url("/assets/fonts/Reforma/Reforma2018-$(w)$(s).woff2") format('woff2'),
-           url("/assets/fonts/Reforma/Reforma2018-$(w)$(s).woff") format('woff');
-    }
+  @font-face {
+    font-family: 'Reforma';
+    font-style: normal;
+    font-weight: $(weight);
+    font-display: block;
+    src: url("/assets/fonts/Reforma/Reforma1969-$(w).woff2") format('woff2'),
+         url("/assets/fonts/Reforma/Reforma1969-$(w).woff") format('woff');
+  }
+  @font-face {
+    font-family: 'Reforma';
+    font-style: italic;
+    font-weight: $(weight);
+    font-display: block;
+    src: url("/assets/fonts/Reforma/Reforma1918-$(w)Italica.woff2") format('woff2'),
+         url("/assets/fonts/Reforma/Reforma1918-$(w)Italica.woff") format('woff');
   }
 }
 

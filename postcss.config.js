@@ -15,6 +15,5 @@ module.exports = {
           }),
         ]
       : []),
-    // require('colorguard'),
   ],
 };
