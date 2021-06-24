@@ -1,7 +1,8 @@
 ---
 title: On weapon degradability and universal truths
-description: A discussion on how we discuss about game designs, in the context
-  of the recent hubbub around weapon degradation in BotW.
+description: We often discuss game designs in too limiting terms – and the most
+  recent example was the recent hubbub around weapon degradation in BotW. So
+  let's deconstruct that.
 date: 2021-06-24T14:00:05.690Z
 tags:
   - post
