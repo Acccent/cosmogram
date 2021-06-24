@@ -1,11 +1,7 @@
 ---
 title: On weapon degradability and universal truths
-description: "A few days ago, Nintendo dropped a new trailer for the upcoming
-  Breath of the Wild sequel ([here](https://youtu.be/Pi-MRZBP91I)). I haven't
-  watched it myself, so I'm not sure if something in the trailer triggered what
-  followed, or if it was just a matter of planetary alignment, but in any case,
-  it did happen: *weapon degradation discourse on twitter*. Obviously I joined
-  in because I can never shut the fuck up."
+description: A discussion on how we discuss about game designs, in the context
+  of the recent hubbub around weapon degradation in BotW.
 date: 2021-06-24T04:17:05.690Z
 tags:
   - post
@@ -13,7 +9,7 @@ tags:
 ---
 A few days ago, Nintendo dropped a new trailer for the upcoming Breath of the Wild sequel ([here](https://youtu.be/Pi-MRZBP91I)). I haven't watched it myself, so I'm not sure if something in the trailer triggered what followed, or if it was just a matter of planetary alignment, but in any case, it did happen: *weapon degradation discourse on twitter*. Obviously I joined in because I can never shut the fuck up.
 
-https://twitter.com/acccent/status/1405086128856879107?s=21
+https://twitter.com/acccent/status/1405086128856879107
 
 I don't like it! And well... who cares, right? It's just a game system. But strangely, whenever this particular topic is brought up, there's a whole range of people who will proclaim that they *do* like it, and that not liking it is an unequivocal demonstration of one's incapability to grasp the subtleties of game design.\
 (To anyone reading this who tweeted something along the lines of '*weapon degradation is good actually and if you can't see why you're a chump*': I get it. it's twitter. what are you gonna do, post a nuanced take?)
