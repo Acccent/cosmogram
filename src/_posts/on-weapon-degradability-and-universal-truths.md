@@ -2,7 +2,7 @@
 title: On weapon degradability and universal truths
 description: A discussion on how we discuss about game designs, in the context
   of the recent hubbub around weapon degradation in BotW.
-date: 2021-06-24T04:17:05.690Z
+date: 2021-06-24T14:00:05.690Z
 tags:
   - post
   - design
