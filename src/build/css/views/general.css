@@ -13,10 +13,6 @@
   color: var(--text-color-heading);
 }
 
-h1 {
-  font-feature-settings: "dlig", "ss02";
-}
-
 p, .text-font {
   font-family: var(--font-family-text);
   --hiq-list-margin-left: 1em;

@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    {% if page.url == '/' %}
+      {% set socialcard = 'https://cosmogr.am/assets/img/CosmogramHome.png' %}
+    {% else %}
+      {% set socialcard %}
+        {% cloudimg text = title %}
+      {% endset %}
+    {% endif %}
+
     {% metagen
       title=metatitle or title,
       desc=metadescription or decription,
       url="https://cosmogr.am"+page.url,
-      img="",
-      img_alt="",
+      img=socialcard,
+      img_alt=title,
       twitter_card_type="summary_large_image",
       twitter_handle="acccent",
       name=author
     %}
-    {% block head %}{% endblock %}
 
     <link rel="stylesheet" href="/style.css"/>
 
     <script defer src="build/js/core.js"></script>
   </head>
   <body id="{{ bodyid }}">
+    {{page.url}}
 
     <div id="cosmogram" aria-hidden="true"></div>
 

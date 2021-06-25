@@ -7,6 +7,10 @@
     flex-flow: column;
     align-items: center;
     margin: 35vh 0;
+
+    h1 {
+      font-feature-settings: "dlig", "ss02";
+    }
   }
 
   article {

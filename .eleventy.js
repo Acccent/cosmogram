@@ -23,10 +23,10 @@ module.exports = function (eleventyConfig) {
 
   // Configure MD replacements
   const replacements = [
-    [/(\s)'(\S)/g, '$1\u2018$2'],
-    [/(\S)'(\s)/g, '$1\u2019$2'],
-    [/(\s)"(\S)/g, '$1\u201c$2'],
-    [/(\S)"(\s)/g, '$1\u201d$2']
+    [/(^|[\s\p{P}])'(\S)/gu, '$1\u2018$2'],
+    [/(\S)'([\s\p{P}]|$)/gu, '$1\u2019$2'],
+    [/(^|[\s\p{P}])"(\S)/gu, '$1\u201c$2'],
+    [/(\S)"([\s\p{P}]|$)/gu, '$1\u201d$2']
   ];
   for(const r of replacements) {
     markdownItReplacements.replacements.push(
@@ -52,10 +52,38 @@ module.exports = function (eleventyConfig) {
     })
   );
 
-  // eleventy-plugin-responsive-images
+  // eleventy-plugin-responsive-images & social-share-card-generator
   eleventyConfig.addPlugin(responsiveImages);
   eleventyConfig.cloudinaryCloudName = 'cosmogram';
   eleventyConfig.hostname = 'https://cosmogr.am';
+  // eleventyConfig.addPlugin(socialShareCardGenerator, {
+  //   cloudName: eleventyConfig.cloudinaryCloudName,
+  //   publicId: 'Blog_card',
+  //   fontColour: 'f9f9fb',
+  //   fontFace: 'Inknut Antiqua',
+  //   fontWeight: 'regular',
+  //   position: 'east',
+  // });
+
+  eleventyConfig.addShortcode('cloudimg', ({ ...options }) => {
+    const sanitiseText = escape(encodeURIComponent(options.text));
+
+    const setting = [
+      'w_660',
+      'h_600',
+      'g_west',
+      'x_500',
+      'c_fit',
+      'q_auto',
+      'f_auto',
+      'co_rgb:f9f9fb',
+      'l_text:Inknut%20Antiqua_70_line_spacing_-70'
+    ];
+
+    const url = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/${setting.join()}:${sanitiseText}/Blog_card`;
+
+    return url;
+  });
 
   // eleventy-plugin-reading-time
   eleventyConfig.addPlugin(readingTime);
