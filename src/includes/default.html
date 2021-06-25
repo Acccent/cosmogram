@@ -16,7 +16,7 @@
 
     {% metagen
       title=metatitle or title,
-      desc=metadescription or decription,
+      desc=decription,
       url="https://cosmogr.am"+page.url,
       img=socialcard,
       img_alt=title,
@@ -30,7 +30,6 @@
     <script defer src="build/js/core.js"></script>
   </head>
   <body id="{{ bodyid }}">
-    {{page.url}}
 
     <div id="cosmogram" aria-hidden="true"></div>
 
