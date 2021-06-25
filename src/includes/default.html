@@ -16,13 +16,13 @@
 
     {% metagen
       title=metatitle or title,
-      desc=decription,
+      desc=description,
+      name=author or siteinfo.author,
       url="https://cosmogr.am"+page.url,
       img=socialcard,
       img_alt=title,
       twitter_card_type="summary_large_image",
-      twitter_handle="acccent",
-      name=author
+      twitter_handle="acccent"
     %}
 
     <link rel="stylesheet" href="/style.css"/>
