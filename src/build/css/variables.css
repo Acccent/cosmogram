@@ -88,7 +88,7 @@
 
   /* line height */
   --hiq-line-height-base: 1.6;
-  --hiq-heading-line-height: 1.2;
+  --hiq-heading-line-height: calc(0.8rem + 1.1em);
 
   /* font weights */
   --hiq-font-weight-light: 300;
