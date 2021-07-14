@@ -9,6 +9,4 @@ tags:
 ---
 This is a recap of a great discussion that followed this question by Alex:
 
-https://twitter.com/dirtbagboyfren/status/1413532911232454659?s=21
-
 https://twitter.com/dirtbagboyfren/status/1413533221711613953?s=21
