@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const sc = oScrollbars(document.body, {
     className: 'os-theme-light',
     overflowBehavior: { x: 'h' },
+    nativeScrollbarsOverlaid: {
+      showNativeScrollbars: true,
+      initialize: false
+    },
     scrollbars: { autoHide: 'm' },
     callbacks: {
       onScroll: nav ? handleScroll : null,

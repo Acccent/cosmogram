@@ -56,14 +56,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(responsiveImages);
   eleventyConfig.cloudinaryCloudName = 'cosmogram';
   eleventyConfig.hostname = 'https://cosmogr.am';
-  // eleventyConfig.addPlugin(socialShareCardGenerator, {
-  //   cloudName: eleventyConfig.cloudinaryCloudName,
-  //   publicId: 'Blog_card',
-  //   fontColour: 'f9f9fb',
-  //   fontFace: 'Inknut Antiqua',
-  //   fontWeight: 'regular',
-  //   position: 'east',
-  // });
 
   eleventyConfig.addShortcode('cloudimg', ({ ...options }) => {
     const sanitiseText = escape(encodeURIComponent(options.text));
