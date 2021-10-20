@@ -1,5 +1,5 @@
 ---
-title: 'On "Blockchain Gaming"; or: I beg you to believe in something other than
+title: 'On "Blockchain Gaming", or: I beg you to believe in something other than
   profit'
 description: Blockchain-related concepts like NFTs are being discussed more and
   more within game circles, and what I would just like to say about that, is
