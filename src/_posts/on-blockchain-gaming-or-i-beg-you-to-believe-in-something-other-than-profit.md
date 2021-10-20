@@ -1,8 +1,8 @@
 ---
-title: "On Blockchain Gaming; or: I beg you to believe in something other than profit"
+title: I beg you to believe in something other than profit
 description: Blockchain-related concepts like NFTs are being discussed more and
-  more within game circles, and what I would just like to say about that, is
-  that they really suck.
+  more within the game industry; I took a look at a proponent's arguments, and
+  wanted to address them here.
 date: 2021-10-15T20:40:05.454Z
 tags:
   - post
