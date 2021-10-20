@@ -10,7 +10,7 @@
 
       & > .header-anchor {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         position: absolute;
         bottom: 0.25em;
         right: 100%;
