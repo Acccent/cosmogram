@@ -12,25 +12,25 @@ When a friend of mine recently linked me to an article detailing a game designer
 
 ### 5 Reasons Why You've Just Spewed Bullshit on Blockchain Gaming
 
-  ***1.*** *Using NFTs creates scarcity, and scarcity means new content drops in a live game can be attractive to players without having to resort to power creep.*
+&emsp; **1.** *Using NFTs creates scarcity, and scarcity means new content drops in a live game can be attractive to players without having to resort to power creep.*
 
 It's unclear how NFTs help with this. Developers can create artificial scarcity by simply only enabling a few players to gain assets. Plenty of games have had rare items, long before we started talking about NFTs. 
 
-  ***2.*** *Ownership of game assets means you can also resell them; players are more likely to spend a lot of money in a game if they know they'll be able to sell the things they bought.*
+&emsp; **2.** *Ownership of game assets means you can also resell them; players are more likely to spend a lot of money in a game if they know they'll be able to sell the things they bought.*
 
 Again, NFTs themselves don't really enable any of this. And again, plenty of games have official or unofficial markets for assets.
 
 Actually, because we've already dealt with games that do have artificial scarcity, and do enable players to resell assets, we know all the problems that come with those ideas; the appeal of in-game items becomes inextricably tied to their monetary value, and we start to face issues of social inequality and vulnerability, and addiction mechanisms creep into designs. But the article's author doesn't talk about any of that, for reasons that I'll expand on later.
 
-  ***3.*** *If players can own (and therefore collect) in-game assets, that in itself can become their goal in the game instead of accruing power or getting high scores, so NFTs enable games to reach different audiences.*
+&emsp; **3.** *If players can own (and therefore collect) in-game assets, that in itself can become their goal in the game instead of accruing power or getting high scores, so NFTs enable games to reach different audiences.*
 
 How sad is it for a game designer to think that we haven't yet found ways to speak to audiences who are more attracted to collection rather than power? Besides, once again, even if 'ownership' was a brand new thing, it doesn't require NFTs.
 
-  ***4.*** *(Rehash of point 2)*
+&emsp; **4.** *(Rehash of point 2)*
 
 I'm not kidding, this is just literally a rephrasing of the second argument. I read both sections several times to try to identify the nuance, but there isn't one.
 
-  ***5.*** *NFTs enable the community to have governance over the game's evolution.*
+&emsp; **5.** *NFTs enable the community to have governance over the game's evolution.*
 
 Now this is interesting! Oh--- not because it's a valid point, sorry--- just because it's about something I deeply care about. And which, you guessed it, [games are already exploring](https://www.blaseball.com) without the need for any crypto bullshit. The author doesn't even try to link his argument to NFTs here, he simply says that it would be cool if players could, for instance, vote on the next feature to be added to the game. I agree! But I suppose he is also saying that players who own more assets should get more votes. I... do not agree. And regardless: *enabling ownership of in-game things does not imply or require the reliance on NFTs.*
 
