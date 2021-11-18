@@ -12,7 +12,7 @@ In November of 2021, [Osama Dorias](https://twitter.com/osamadorias), [Liz Engla
 I was invited, along with 99 other designers, to create a single card which would, along with the 99 other cards, form a deck to be used in a very chaotic game. Basically the only things I knew when I started designing the card was that:
 
 1. All cards would be shuffled into a shared deck from which players would draw 5 cards;
-2. The turn sequence simply involves playing one or two cards (following the instructions on the cards), then drawing back up to 5 cards;
+2. A turn simply involves playing up to 2 cards (following the instructions on the cards), then drawing back up to 5;
 3. Cards played are placed in front of the player and remain there, unless stated otherwise.
 
 You can read more about the project and see all the submissions [here](http://howmanydesignersdoesittake.com). Below, I'll talk a bit about my own card, the Pensive Lady.
