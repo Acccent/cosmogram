@@ -16,3 +16,6 @@ I was invited, along with 99 other designers, to create a single card which woul
 3. Cards played are placed in front of the player and remain there, unless stated otherwise.
 
 You can read more about the project and see all the submissions [here](http://howmanydesignersdoesittake.com). Below, I'll talk a bit about my own card, the Pensive Lady.
+
+<img src="/assets/img/hmddittmac-pensive-lady-small.png" title="Pensive Lady" alt="Pensive Lady card rules: Whenever another player discards one of their cards, you may instead place it face-down under Pensive Lady. (If Pensive Lady is discarded, all cards under it return to the discard zone.) When you place the 12th card under Pensive Lady, the game ends. Then, read the players' fortunes in the 12 cards, to ascertain the winner." style="text-align: center; width: 300px; margin: auto;">
+
