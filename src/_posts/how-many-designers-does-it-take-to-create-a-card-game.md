@@ -19,3 +19,4 @@ You can read more about the project and see all the submissions [here](http://ho
 
 <img src="/assets/img/hmddittmac-pensive-lady-small.png" title="Pensive Lady" alt="Pensive Lady card rules: Whenever another player discards one of their cards, you may instead place it face-down under Pensive Lady. (If Pensive Lady is discarded, all cards under it return to the discard zone.) When you place the 12th card under Pensive Lady, the game ends. Then, read the players' fortunes in the 12 cards, to ascertain the winner." style="text-align: center; width: 300px; margin: auto;">
 
+When I started thinking about the project and what I would do for my card, I knew that I wanted to integrate elements of other card games, but not the kind that game designers often like to play and discuss (ie. MtG and the like). Instead, I was thinking of classic games like Hearts, as well as Tarot and other forms of divination.
