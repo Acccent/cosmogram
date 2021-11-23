@@ -39,16 +39,11 @@ The last aspect I considered when designing the card was its 'playability' – I
 
 #### Aesthetics
 
-Thematically, the card pays homage to the French tradition of divination, [as seen here](https://www.wopc.co.uk/france/livre-du-destin). I knew I wanted to incorporate divination in the card, while also remaining true to my own roots – not because I am particularly fond of my french heritage, because it would feel wrong to use an aesthetic derived from a culture that isn't mine without substantial research and sensitivity. French cards happen to have a long history that isn't often explored in modern cartomancy – [the origins of tarot as an occult instrument are French](https://en.wikipedia.org/wiki/Tarot_card_reading)... so this was a perfect opportunity.
+Thematically, the card pays homage to the French tradition of divination, [as seen here](https://www.wopc.co.uk/france/livre-du-destin). I knew I wanted to incorporate divination in the card, while also remaining true to my own roots – not because I am particularly fond of my french heritage, because it would feel wrong to use an aesthetic derived from a culture that isn't mine without substantial research and sensitivity. French cards happen to have a long history that isn't often explored in modern cartomancy – [the origins of tarot as an occult instrument are French](https://en.wikipedia.org/wiki/Tarot_card_reading)... this was a perfect opportunity. So I chose Le Petit Cartomancien deck as a basis and bought a copy (see picture); its Queen of Spades has a widow as the associated illustration, which echoed nicely the Black Lady game, and therefore was a perfect starting point.
 
 ![Cards from "Le Petit Cartomancien" deck laid out on a table](/assets/img/petit-cartomancien.png "Le Petit Cartomancien")
 
-I chose Le Petit Cartomancien deck as a basis and bought a copy. The Queen of Spades was a perfect starting point;
-
-The starting point was 
-
-  In particular
-The main illustration is from J. J. Grandville, a renowned French illustrator and cartoonist from the early 19th century whose style is reproduced on many French tarot cards.
+I chose to replace the central illustration with one from [J. J. Grandville](https://en.wikipedia.org/wiki/Jean_Ignace_Isidore_Gérard_Grandville), a renowned French illustrator and cartoonist from the early 19th century whose style is reproduced on many French tarot cards.
 The title can be interpreted as a description of a widow, the archetype traditionally associated with the Queen of Spades in French fortune-telling cards, or as a nod to Pallas Athena, the goddess of Wisdom and the Queen of Spades herself in the "portrait officiel" style of playing cards. Of course, it's also simply a reference to the actual scene depicted on the card: a woman dreaming of becoming a queen.
 
 The last line of the card rules combines these two aspects in a subversion of conventional victory conditions: the player is given agency to interpret how a fortune reading might be performed, and then can decide who the winner is, if there even is one.
