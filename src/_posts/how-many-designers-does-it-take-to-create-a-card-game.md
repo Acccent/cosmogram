@@ -17,11 +17,11 @@ I was invited, along with 99 other designers, to create a single card which woul
 
 You can read more about the project and see all the submissions [here](http://howmanydesignersdoesittake.com). Below, I'll talk a bit about my own card, the Pensive Lady.
 
-<img src="/assets/img/hmddittmac-pensive-lady-small.png" title="Pensive Lady" alt="Card in the style of classic French divination decks, with the title at the bottom, a large illustration of a woman on a balcony looking wistfully at the sky in the center, the rules in the top-right corner and an image of the Queen of Spades in a frame in the top-left corner." style="float: left; width: calc(100% - 1em); max-width: 300px; margin: 0 1em 1.5em 0;">
+![Card in the style of classic French divination decks, with the title at the bottom, a large illustration of a woman on a balcony looking wistfully at the sky in the center, the rules in the top-right corner and an image of the Queen of Spades in a frame in the top-left corner.](/assets/img/hmddittmac-pensive-lady-small.png "Pensive Lady")
 
 *Card rules: Whenever another player discards one of their cards, you may instead place it face-down under Pensive Lady. (If Pensive Lady is discarded, all cards under it return to the discard zone.) When you place the 12th card under Pensive Lady, the game ends. Then, read the players' fortunes in the 12 cards, to ascertain the winner.*
 
-When I started thinking about the project and what I would do for my card, I knew that I wanted to integrate elements of other card games, but not the kind that game designers often like to play and discuss (ie. MtG and the like). Instead, I was thinking of classic games like Hearts – which has always been a personal favourite of mine –, as well as Tarot and other forms of divination.
+When I started thinking about the project and what I would do for my card, I knew that I wanted to integrate elements of other card games, but not the kind that game designers often like to play and discuss (ie. MtG and the like). Instead, I was thinking of classic games like Hearts – which has always been a personal favourite of mine –, as well as tarot and other forms of divination.
 
 #### Mechanics
 
@@ -31,7 +31,7 @@ The Pensive Lady mechanically mimics the act of trick-taking (just like when win
 
 Some design tidbits:
 
-* Not knowing any of the other cards, I didn't know how often players would play 2 cards in a turn (instead of one), but requiring 12 cards meant a minimum of two full rounds would need to pass before the victory condition could be achieved (barring any combos), which seemed like a reasonable amount of reaction time to give opponents.
+* Not knowing any of the other cards, I didn't know how often players would play 2 cards in a turn (instead of one), but requiring 12 cards meant a minimum of two full rounds would pass before the victory condition could be achieved (barring any combos), which seemed like a reasonable amount of reaction time to give opponents.
 * I did worry that maybe no other cards would provide a way to actually neutralise Pensive Lady, but the risk was minimal, and odds were that the deck would be full of other similarly unstoppable creatures.
 * The rules avoid ambuiguities like targeting Pensive Lady herself by specifying that it only activates when *another* player discards one of *their* cards.
 
@@ -39,7 +39,15 @@ The last aspect I considered when designing the card was its 'playability' – I
 
 #### Aesthetics
 
-Thematically, the card pays homage to the French tradition of divination, as seen here for instance: https://www.wopc.co.uk/france/livre-du-destin
+Thematically, the card pays homage to the French tradition of divination, [as seen here](https://www.wopc.co.uk/france/livre-du-destin). I knew I wanted to incorporate divination in the card, while also remaining true to my own roots – not because I am particularly fond of my french heritage, because it would feel wrong to use an aesthetic derived from a culture that isn't mine without substantial research and sensitivity. French cards happen to have a long history that isn't often explored in modern cartomancy – [the origins of tarot as an occult instrument are French](https://en.wikipedia.org/wiki/Tarot_card_reading)... so this was a perfect opportunity.
+
+![Cards from "Le Petit Cartomancien" deck laid out on a table](/assets/img/petit-cartomancien.png "Le Petit Cartomancien")
+
+I chose Le Petit Cartomancien deck as a basis and bought a copy. The Queen of Spades was a perfect starting point;
+
+The starting point was 
+
+  In particular
 The main illustration is from J. J. Grandville, a renowned French illustrator and cartoonist from the early 19th century whose style is reproduced on many French tarot cards.
 The title can be interpreted as a description of a widow, the archetype traditionally associated with the Queen of Spades in French fortune-telling cards, or as a nod to Pallas Athena, the goddess of Wisdom and the Queen of Spades herself in the "portrait officiel" style of playing cards. Of course, it's also simply a reference to the actual scene depicted on the card: a woman dreaming of becoming a queen.
 
