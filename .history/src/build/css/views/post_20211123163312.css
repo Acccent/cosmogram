@@ -52,8 +52,7 @@
 
         @media (--floating-images) {
           &:not(.centered) {
-            width: 40%;
-
+            
             &:nth-child(odd) {
               float: left;
               margin-left: 0;
