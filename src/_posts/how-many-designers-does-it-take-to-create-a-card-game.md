@@ -11,7 +11,6 @@ tags:
 In November of 2021, [Osama Dorias](https://twitter.com/osamadorias), [Liz England](https://twitter.com/lizardengland) and [Sam Boucher](https://twitter.com/MonsieurEureka) organised a game jam (slash social experiment, slash communal design performance) titled "How many designers does it take to create a card game?"
 
 I was invited, along with 99 other designers, to create a single card which would, along with the 99 other cards, form a deck to be used in a very chaotic game. Basically the only things I knew when I started designing the card was that:
-
 1. All cards would be shuffled into a shared deck from which players would draw 5 cards;
 2. A turn simply involves playing up to 2 cards (following the instructions on the cards), then drawing back up to 5;
 3. Cards played are placed in front of the player and remain there, unless stated otherwise.
@@ -31,7 +30,6 @@ I started with the rules. The main goal was to evoke the Black Lady variant of H
 The Pensive Lady mechanically mimics the act of trick-taking (just like when winning a trick, you take cards from your opponents and place them face-down in front of you), and the gradual progress towards a big reward which other players have to counter before it's too late. Additionally, the rules ask for 12 cards, creating a stack of 13 cards when counting the Pensive Lady herself -- the Queen of Spades is worth 13 penalty points in a game of Black Lady.
 
 Some design tidbits:
-
 * Not knowing any of the other cards, I didn't know how often players would play 2 cards in a turn (instead of one), but requiring 12 cards meant a minimum of two full rounds would pass before the victory condition could be achieved (barring any combos), which seemed like a reasonable amount of reaction time to give opponents.
 * I did worry that maybe no other cards would provide a way to actually neutralise Pensive Lady, but the risk was minimal, and odds were that the deck would be full of other similarly unstoppable creatures.
 * The rules avoid ambuiguities like targeting Pensive Lady herself by specifying that it only activates when *another* player discards one of *their* cards.
@@ -52,6 +50,6 @@ The title brings everything together: it can be interpreted as a description of 
 
 It was important to provide a win condition to mechanically match the concept of shooting the moon, but I really wanted to tie it to the divination element. I think the last line of the card rules does combine these two aspects -- the player has essentially 'won,' but they get the opportunity to add a little occult flavour to their victory.
 
-I iterated a bit over the phrasing to find the final version of the rule. Starting it with "The game ends; then..." serves as a way to both alleviate the 'mechanical load' (ie. the player knows that everything that follows is not part of the 'game'), and to add a little gravitas to the proceeding.
+I iterated a bit over the phrasing to find the final version of the rule. Starting it with "The game ends; then..." serves as a way to both alleviate the 'mechanical load' (ie. the player knows that everything that follows is not part of the 'game'), and to add a little gravitas to the proceedings.
 
-It's also a subversion of conventional victory conditions: the player is given agency to interpret what a "fortune reading" might mean in the context of the game and how it might be performed. And in doing so, they can decide who the winner(s) is or are, or if there even is one. In a sense, just like I was invited to design this card, it is now their turn to invent a small playful ritual... isn't divination a kind of game in itself? In the end, via this card, I hope we ask ourselves if designer, player and fortune teller aren't maybe one and the same.
+It's also a subversion of conventional victory conditions: the player is given agency to interpret what a "fortune reading" might mean in the context of the game and how it might be performed. And in doing so, they can decide who the winner(s) is or are, or if there even is one. In a sense, just like I was invited to design this card, it is now their turn to invent a small playful ritual... after all, isn't divination a kind of game in itself? In the end, via this card, I hope we ask ourselves if designer, player and fortune teller aren't maybe one and the same.
