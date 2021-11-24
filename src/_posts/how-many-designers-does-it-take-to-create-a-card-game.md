@@ -40,7 +40,7 @@ The last aspect I considered when designing the card was its 'playability' – I
 
 #### Aesthetics
 
-Thematically, the card pays homage to the French tradition of divination, [as seen here](https://www.wopc.co.uk/france/livre-du-destin). I knew I wanted to incorporate divination in the card, while also remaining true to my own culture – not because I am particularly fond of my french heritage, because it would feel wrong to use an aesthetic derived from a one that isn't mine without substantial research and sensitivity. French cards happen to have a long history that isn't often explored in modern cartomancy – [the origins of tarot as an occult instrument are French](https://en.wikipedia.org/wiki/Tarot_card_reading)... this was a perfect opportunity. So I chose *Le Petit Cartomancien* deck as a basis and bought a copy (see picture); its Queen of Spades has a widow as the associated illustration, which echoed nicely the Black Lady game, and therefore was a perfect starting point.
+Thematically, the card pays homage to the French tradition of divination, [as seen here](https://www.wopc.co.uk/france/livre-du-destin). I knew I wanted to incorporate divination in the card, while also remaining true to my own culture – not because I am particularly fond of my French heritage, because it would feel wrong to use an aesthetic derived from a one that isn't mine without substantial research and sensitivity. French cards happen to have a long history that isn't often explored in modern cartomancy – [the origins of tarot as an occult instrument are French](https://en.wikipedia.org/wiki/Tarot_card_reading)... this was a perfect opportunity. So I chose *Le Petit Cartomancien* deck as a basis and bought a copy (see picture); its Queen of Spades has a widow as the associated illustration, which echoed nicely the Black Lady game, and therefore was a perfect starting point.
 
 <img src="/assets/img/petit-cartomancien.png" title="Le Petit Cartomancien" alt="Cards from Le Petit Cartomancien deck laid out on a table">
 
@@ -48,7 +48,7 @@ I chose to replace the central illustration with one from [J. J. Grandville](htt
 
 The title brings everything together: it can be interpreted as a description of the widow from *Le Petit Cartomancien*, or as a nod to Pallas Athena (the Greek goddess of wisdom and the Queen of Spades herself in the "[portrait officiel](https://en.wikipedia.org/wiki/French-suited_playing_cards#Paris_pattern)" style of playing cards, as used in the top-left corner frame). Of course, it's also simply a reference to the actual scene depicted on the card: a woman dreaming of becoming a queen -- in this way, I wanted to play with the structure of the card to suggest a small narrative.
 
-#### The final line...
+#### The final word...
 
 It was important to provide a win condition to mechanically match the concept of shooting the moon, but I really wanted to tie it to the divination element. I think the last line of the card rules does combines these two aspects -- the player has essentially 'won', but they get the opportunity to add a little occult flavour to their victory.
 
