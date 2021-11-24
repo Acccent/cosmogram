@@ -1,3 +1,13 @@
+---
+title: How many designers does it take to create a card game?
+description: Design notes about my submission to a communal game design
+  experiment, along with some thoughts on the process.
+date: 2021-11-23T03:00:00.000Z
+tags:
+  - post
+  - design
+  - work
+---
 In November of 2021, [Osama Dorias](https://twitter.com/osamadorias), [Liz England](https://twitter.com/lizardengland) and [Sam Boucher](https://twitter.com/MonsieurEureka) organised a game jam (slash social experiment, slash communal design performance) titled "How many designers does it take to create a card game?"
 
 I was invited, along with 99 other designers, to create a single card which would, along with the 99 other cards, form a deck to be used in a very chaotic game. Basically the only things I knew when I started designing the card was that:
