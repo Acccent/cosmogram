@@ -8,11 +8,20 @@ tags:
 ---
 Back in 2018, I created a website with the purpose of listing games released the previous year that were accessible to audiences not used to playing videogames. A big majority of games released every year have a huge reliance on the player's familiarity with a specific kind of 'game grammar', and their desensitisation to a particular gamey violence; for people who do play games often, it's very easy to lose sight of this! So I thought it was important to highlight games that went out of their way to avoid these things. This mattered to me both as a player (I wanted to have games to show my non-gamer friends and relatives!) and a designer (reminding myself not to take things for granted.)
 
-The website was quite well received, and in 2019 I made a new edition with a new selection of games. Unfortunately, the following year I lacked the time, energy and budget to make a list for the games of 2019 -- plus, we were all going through a bit of a rough time -- so I didn't publish anything. Around that time, the [Wholesome Games](https://wholesomegames.com) website and events became quite huge and I felt there was enough similarity in the concept to make GFF redundant, so I didn't renew the domain.
+The website was quite well received, and the following year I made a new edition with a new selection of games from 2018. Unfortunately, after that I lacked the time, energy and budget to make a list for the games of 2019 -- plus, the whole world was going through a bit of a rough patch -- so I didn't publish anything. Around that time, the [Wholesome Games](https://wholesomegames.com) website and events became quite huge and I felt there was enough similarity in the concept to make GFF redundant, so I didn't renew the domain.
 
-I still did want to keep the 2018 and 2019 lists somewhere though, so here they are!
+I still did want to keep the lists somewhere though, so here they are!<br>
+The handlettering for the 2017 edition is by [haraiva](https://twitter.com/haraiva/) and the logo for the 2018 edition is by [cynthea](https://twitter.com/cynthealucidarm/).
 
-<img src="/assets/img/gff2018.png" title="Games for Friends 2018" alt="Logo for the 2018 edition">
+<style>
+.gfflogo {
+height: 15em;
+width: auto;
+margin-top: 4em;
+}
+</style>
+
+<img src="/assets/img/gff2018.png" title="Games for Friends 2018" alt="Logo for the 2018 edition" class="centered gfflogo">
 
 #### a good balance
 
@@ -132,7 +141,7 @@ I still did want to keep the 2018 and 2019 lists somewhere though, so here they 
   <p>An exploration game without text or characters, where objects shapeshift as you spin them around to wander through a kaleidoscope of moods and settings.</p></li>
 </ul>
 
-<img src="/assets/img/gff2019.png" title="Games for Friends 2019" alt="Logo for the 2019 edition">
+<img src="/assets/img/gff2019.png" title="Games for Friends 2019" alt="Logo for the 2019 edition" class="centered gfflogo">
 
 
 #### fun
