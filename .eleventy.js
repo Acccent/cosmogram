@@ -1,9 +1,5 @@
 const { DateTime } = require('luxon');
 const yaml = require('js-yaml');
-const load = require('eleventy-load');
-const loadHtml = require('eleventy-load-html');
-const loadJs = require('eleventy-load-js');
-const loadFile = require('eleventy-load-file');
 const metagen = require('eleventy-plugin-metagen');
 const rss = require('@11ty/eleventy-plugin-rss');
 const markdownIt = require('markdown-it');
@@ -26,30 +22,35 @@ module.exports = function (eleventyConfig) {
     [/(^|[\s\p{P}])'(\S)/gu, '$1\u2018$2'],
     [/(\S)'([\s\p{P}]|$)/gu, '$1\u2019$2'],
     [/(^|[\s\p{P}])"(\S)/gu, '$1\u201c$2'],
-    [/(\S)"([\s\p{P}]|$)/gu, '$1\u201d$2']
+    [/(\S)"([\s\p{P}]|$)/gu, '$1\u201d$2'],
   ];
-  for(const r of replacements) {
-    markdownItReplacements.replacements.push(
-      { name: r[1], re: r[0], sub: r[1], default: true }
-    );
+  for (const r of replacements) {
+    markdownItReplacements.replacements.push({
+      name: r[1],
+      re: r[0],
+      sub: r[1],
+      default: true,
+    });
   }
 
   // Change default Markdown preprocessor to automatically add ids to headers + above replacements
-  eleventyConfig.setLibrary('md',
+  eleventyConfig.setLibrary(
+    'md',
     markdownIt({
       html: true,
     })
-    .use(markdownItReplacements, { ellipsis: false })
-    .use(markdownItAnchor, {
-      level: [2],
-      tabindex: false,
-      permalink: markdownItAnchor.permalink.ariaHidden({
-        class: 'header-anchor ui',
-        symbol: '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="heroicon" data-heroicon-name="link" data-heroicon-style="outline"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>',
-        space: false,
-        placement: 'before'
-      }),
-    })
+      .use(markdownItReplacements, { ellipsis: false })
+      .use(markdownItAnchor, {
+        level: [2],
+        tabindex: false,
+        permalink: markdownItAnchor.permalink.ariaHidden({
+          class: 'header-anchor ui',
+          symbol:
+            '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="heroicon" data-heroicon-name="link" data-heroicon-style="outline"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>',
+          space: false,
+          placement: 'before',
+        }),
+      })
   );
 
   // eleventy-plugin-responsive-images & social-share-card-generator
@@ -69,10 +70,12 @@ module.exports = function (eleventyConfig) {
       'q_auto',
       'f_auto',
       'co_rgb:f9f9fb',
-      'l_text:Inknut%20Antiqua_70_line_spacing_-70'
+      'l_text:Inknut%20Antiqua_70_line_spacing_-70',
     ];
 
-    const url = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/${setting.join()}:${sanitiseText}/Blog_card`;
+    const url = `https://res.cloudinary.com/${
+      eleventyConfig.cloudinaryCloudName
+    }/image/upload/${setting.join()}:${sanitiseText}/Blog_card`;
 
     return url;
   });
@@ -100,7 +103,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // eleventy-plugin-heroicons
-  eleventyConfig.addPlugin(heroicons, { className: 'heroicon', });
+  eleventyConfig.addPlugin(heroicons, { className: 'heroicon' });
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -109,7 +112,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // Human readable date
-  eleventyConfig.addFilter('readableDate', (dateObj) => {
+  eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
       'dd LLL yyyy'
     );
@@ -124,70 +127,32 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy assets to /_site
-  eleventyConfig.addPassthroughCopy({'src/assets': 'assets/'});
+  eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets/' });
 
   // Copy favicon to root of /_site
-  eleventyConfig.addPassthroughCopy({'src/favicon.ico': 'favicon.ico'});
+  eleventyConfig.addPassthroughCopy({ 'src/favicon.ico': 'favicon.ico' });
 
   // Create merged collection for homepage
   eleventyConfig.addCollection('home', api => {
-    return api.getAllSorted().filter(item => item.data.tags && item.data.tags.some(tag => ['post', 'experiment'].includes(tag)));
-  });
-
-  // Minify HTML and JS
-  const doMinimize = process.env.NODE_ENV !== 'production' ? false : {
-    collapseWhitespace: true,
-    removeComments: true,
-    removeEmptyAttributes: true,
-    removeScriptTypeAttributes: true,
-    removeStyleLinkTypeAttributes: true,
-    useShortDoctype: true,
-  };
-
-  eleventyConfig.addPlugin(load, {
-    rules: [
-      {
-        test: /\.(html|md)$/,
-        loaders: [
-          {
-            loader: loadHtml,
-            options: {
-              minimize: doMinimize,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.js$/,
-        loaders: [
-          {
-            loader: loadJs,
-            options: {
-              mode: process.env.NODE_ENV,
-            },
-          },
-          {
-            loader: loadFile,
-            options: {
-              name: '[name].[hash].[ext]',
-              publicPath: '/',
-            },
-          },
-        ],
-      },
-    ],
+    return api
+      .getAllSorted()
+      .filter(
+        item =>
+          item.data.tags &&
+          item.data.tags.some(tag => ['post', 'experiment'].includes(tag))
+      );
   });
 
   // Add CSS & JS output to watch target
   eleventyConfig.addWatchTarget('./src/build/');
 
-  // Let Eleventy transform HTML files as nunjucks
-  // So that we can use .html instead of .njk
   return {
     dir: {
       input: 'src',
       includes: 'includes',
     },
+    // Let Eleventy transform HTML files as nunjucks
+    // So that we can use .html instead of .njk
     htmlTemplateEngine: 'njk',
   };
 };

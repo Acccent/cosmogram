@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    {% if page.url == '/' %} {% set socialcard =
+    'https://cosmogr.am/assets/img/CosmogramHome.png' %} {% else %} {% set
+    socialcard %} {% cloudimg text = title %} {% endset %} {% endif %} {%
+    metagen title=metatitle or title, desc=description, name=author or
+    siteinfo.author, url="https://cosmogr.am"+page.url, img=socialcard,
+    img_alt=title, twitter_card_type="summary_large_image",
+    twitter_handle="acccent" %}
 
-    {% if page.url == '/' %}
-      {% set socialcard = 'https://cosmogr.am/assets/img/CosmogramHome.png' %}
-    {% else %}
-      {% set socialcard %}
-        {% cloudimg text = title %}
-      {% endset %}
-    {% endif %}
+    <link rel="stylesheet" href="/style.css" />
 
-    {% metagen
-      title=metatitle or title,
-      desc=description,
-      name=author or siteinfo.author,
-      url="https://cosmogr.am"+page.url,
-      img=socialcard,
-      img_alt=title,
-      twitter_card_type="summary_large_image",
-      twitter_handle="acccent"
-    %}
-
-    <link rel="stylesheet" href="/style.css"/>
-
-    <script defer src="build/js/core.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body id="{{ bodyid }}">
-
     <div id="cosmogram" aria-hidden="true"></div>
 
     <div id="container" class="container">
-      {{ content | safe }}
-
-      {% include "./partials/footer.html" %}
+      {{ content | safe }} {% include "./partials/footer.html" %}
     </div>
-
   </body>
 </html>
